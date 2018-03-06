@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>论文参考文献生成器</title>
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>论文参考文献生成器</h1>
+    </div>
+
+    <div id="con">
+        <div id="top">
+            <img src="img/scholars.jpg" />
+        </div>
+
+        <div id="do">
+            <form id="generate">
+                <p>输入文献相关信息：</p><br />
+
+                <p>请选择文献种类：
+                    <select name="wenxian" id="wenxian" onclick="selectS()">
+                        <option value="专著">专著</option>
+                        <option value="论文集">论文集</option>
+                        <option value="学位论文">学位论文</option>
+                        <option value="报告">报告</option>
+                        <option value="期刊文章">期刊文章</option>
+                        <option value="报纸文章">报纸文章</option>
+                        <option value="国际、国家标准">国际、国家标准</option>
+                        <option value="专利">专利</option>
+                        <option value="电子文献">电子文献</option>
+                        <option value="各种未定义类型的文献">各种未定义类型的文献</option>
+                    </select>
+                </p>
+
+                <div id="N1">
+                    <p>专著、论文集、学位论文、报告</p>
+                    <p>主要责任者：<input type="text" name="" /></p>
+                    <p>文献提名：<input type="text" name="" /></p>
+                    <p>出版地：<input type="text" name="" /></p>
+                    <p>出版者：<input type="text" name="" /></p>
+                    <p>出版年：<input type="text" name="" /></p>
+                    <p>起止页码(任选)：<input type="text" name="" /> 到 <input type="text" name="" /></p>
+                </div>
+
+                <div id="N2">
+                    <p>期刊文章：</p>
+                    <p>主要责任者：<input type="text" name="" /></p>
+                    <p>文献提名：<input type="text" name="" /></p>
+                    <p>刊名：<input type="text" name="" /></p>
+                    <p>年：<input type="text" name="" /></p>
+                    <p>卷(任选)：<input type="text" name="" /></p>
+                    <p>期：<input type="text" name="" /></p>
+                    <p>起止页码(任选)：<input type="text" name="" /> 到 <input type="text" name="" /></p>
+                </div>
+
+                <div id="N3">
+                    <p>报纸文章：</p>
+                    <p>主要责任者：<input type="text" name="" /></p>
+                    <p>文献题名：<input type="text" name="" /></p>
+                    <p>报纸名：<input type="text" name="" /></p>
+                    <p>出版日期：<input type="text" name="" /></p>
+                    <p>版次：<input type="text" name="" /></p>
+                </div>
+
+                <div id="N4">
+                    <p>国际、国家标准：</p>
+                    <p>标准编号：<input type="text" name="" /></p>
+                    <p>标准名称：<input type="text" name="" /></p>
+                </div>
+
+                <div id="N5">
+                    <p>专利：</p>
+                    <p>专利所有者：<input type="text" name="" /></p>
+                    <p>专利提名：<input type="text" name="" /></p>
+                    <p>专利国别：<input type="text" name="" /></p>
+                    <p>专利号：<input type="text" name="" /></p>
+                    <p>出版日期：<input type="text" name="" /></p> 
+                </div>
+
+                <div id="N6">
+                    <p>电子文献：</p>
+                    <p>电子文献类型：
+                        <select>
+                            <option>一般网址</option>
+                            <option value="EB/OL">网上电子公告(electronic bulletin board online)
+                            </option>
+                            <option value="J/OL">网上期刊(serial online)
+                            </option>
+                            <option value="DB/OL">联机网上数据库(database online)
+                            </option>
+                            <option value="DB/MT">磁带数据库(database on magnetic tape)
+                            </option>
+                            <option value="M/CD">光盘图书(monograph on CD-ROM)
+                            </option>
+                            <option value="DB/CD">光盘数据库(database on CD-ROM)
+                            </option>
+                        </select>
+                    </p>
+                    <p>主要责任者：<input type="text" name="" /></p>
+                    <p>电子文献提名：<input type="text" name="" /></p>
+                    <p>电子文献的出处或可获得地址：<input type="text" name="" /></p>
+                    <p>发表或更新日期/引用日期(任选)：<input type="text" name="" /> / <input type="text" name="" /></p>       
+                </div>
+
+                <div id="N7">
+                    <p>各种未定义类型的文献：</p>
+                    <p>主要责任者：<input type="text" name="" /></p>
+                    <p>文献题名：<input type="text" name="" /></p>
+                    <p>出版地：<input type="text" name="" /></p>
+                    <p>出版者：<input type="text" name="" /></p>
+                    <p>出版年：<input type="text" name="" /></p>
+                </div>
+                <input type="submit" value="添加文献" />
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- <iframe
+            frameborder="0" scrolling="0" width="91px" height="20px"
+            src="https://ghbtns.com/github-btn.html?user=CharlesJxx&repo=CharlesJxx.github.io&type=star&count=true" >
+        </iframe> -->
+    </div>
+</body>
+</html>
