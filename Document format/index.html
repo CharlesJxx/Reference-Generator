@@ -19,7 +19,7 @@
         </div>
 
         <div id="do">
-            <form id="generate">
+            <form id="generate" method="post" target="btz">
                 <p>输入文献相关信息：</p><br />
 
                 <p>请选择文献种类：
@@ -39,47 +39,52 @@
 
                 <div id="N1">
                     <p>专著、论文集、学位论文、报告</p>
-                    <p>主要责任者：<input type="text" name="" /></p>
-                    <p>文献提名：<input type="text" name="" /></p>
-                    <p>出版地：<input type="text" name="" /></p>
-                    <p>出版者：<input type="text" name="" /></p>
-                    <p>出版年：<input type="text" name="" /></p>
-                    <p>起止页码(任选)：<input type="text" name="" /> 到 <input type="text" name="" /></p>
+                    <p>主要责任者：<input type="text" name="Author1" id="Author1" /></p>
+                    <p>文献题名：<input type="text" name="Title1" id="Title1" /></p>
+                    <input type="hidden" id="type1" />
+                    <p>出版地：<input type="text" name="Country1" id="Country1" /></p>
+                    <p>出版者：<input type="text" name="Publisher1" id="Publisher1" /></p>
+                    <p>出版年：<input type="text" name="PublishYear1" id="PublishYear1" /></p>
+                    <p>起止页码(任选)：<input type="text" name="BookStartPage1" id="BookStartPage1" /> 到 <input type="text" name="BookEndPage1" id="BookEndPage1" /></p>
                 </div>
 
                 <div id="N2">
                     <p>期刊文章：</p>
-                    <p>主要责任者：<input type="text" name="" /></p>
-                    <p>文献提名：<input type="text" name="" /></p>
-                    <p>刊名：<input type="text" name="" /></p>
-                    <p>年：<input type="text" name="" /></p>
-                    <p>卷(任选)：<input type="text" name="" /></p>
-                    <p>期：<input type="text" name="" /></p>
-                    <p>起止页码(任选)：<input type="text" name="" /> 到 <input type="text" name="" /></p>
+                    <p>主要责任者：<input type="text" name="Author2" id="Author2" /></p>
+                    <p>文献题名：<input type="text" name="Title2" id="Title2" /></p>
+                    <input type="hidden" id="type2" />
+                    <p>刊名：<input type="text" name="Kanming2" id="Kanming2" /></p>
+                    <p>年：<input type="text" name="PublishYear2" id="PublishYear2" /></p>
+                    <p>卷(任选)：<input type="text" name="Volume2" id="Volume2" /></p>
+                    <p>期：<input type="text" name="Term2" id="Term2" /></p>
+                    <p>起止页码(任选)：<input type="text" name="BookStartPage2" id="BookStartPage2" /> 到 <input type="text" name="BookEndPage2" id="BookEndPage2" /></p>
                 </div>
 
                 <div id="N3">
                     <p>报纸文章：</p>
-                    <p>主要责任者：<input type="text" name="" /></p>
-                    <p>文献题名：<input type="text" name="" /></p>
-                    <p>报纸名：<input type="text" name="" /></p>
-                    <p>出版日期：<input type="text" name="" /></p>
-                    <p>版次：<input type="text" name="" /></p>
+                    <p>主要责任者：<input type="text" name="Author3" id="Author3" /></p>
+                    <p>文献题名：<input type="text" name="Title3" id="Title3" /></p>
+                    <input type="hidden" id="type3" />
+                    <p>报纸名：<input type="text" name="PaperName3" id="PaperName3" /></p>
+                    <p>出版日期：<input type="text" name="PublishYear3" id="PublishYear3" /></p>
+                    <p>版次：<input type="text" name="Edition3" id="Edition3" /></p>
                 </div>
 
                 <div id="N4">
                     <p>国际、国家标准：</p>
-                    <p>标准编号：<input type="text" name="" /></p>
-                    <p>标准名称：<input type="text" name="" /></p>
+                    <p>标准编号：<input type="text" name="StandardNumber4" id="StandardNumber4" /></p>
+                    <p>标准名称：<input type="text" name="StandardName4" id="StandardName4" /></p>
+                    <input type="hidden" id="type4" />
                 </div>
 
                 <div id="N5">
                     <p>专利：</p>
-                    <p>专利所有者：<input type="text" name="" /></p>
-                    <p>专利提名：<input type="text" name="" /></p>
-                    <p>专利国别：<input type="text" name="" /></p>
-                    <p>专利号：<input type="text" name="" /></p>
-                    <p>出版日期：<input type="text" name="" /></p> 
+                    <p>专利所有者：<input type="text" name="Author5" id="Author5" /></p>
+                    <p>专利题名：<input type="text" name="Title5" id="Title5" /></p>
+                    <input type="hidden" id="type5" />
+                    <p>专利国别：<input type="text" name="Country5" id="Country5" /></p>
+                    <p>专利号：<input type="text" name="PatentNo5" id="PatentNo5" /></p>
+                    <p>出版日期：<input type="text" name="PublishYear5" id="PublishYear5" /></p> 
                 </div>
 
                 <div id="N6">
@@ -101,23 +106,31 @@
                             </option>
                         </select>
                     </p>
-                    <p>主要责任者：<input type="text" name="" /></p>
-                    <p>电子文献提名：<input type="text" name="" /></p>
-                    <p>电子文献的出处或可获得地址：<input type="text" name="" /></p>
-                    <p>发表或更新日期/引用日期(任选)：<input type="text" name="" /> / <input type="text" name="" /></p>       
+                    <p>主要责任者：<input type="text" name="Author6" id="Author6" /></p>
+                    <p>电子文献题名：<input type="text" name="" id="" /></p>
+                    <p>电子文献的出处或可获得地址：<input type="text" name="" id="" /></p>
+                    <p>发表或更新日期/引用日期(任选)：<input type="text" name="" id="" /> / <input type="text" name="" /></p>       
                 </div>
 
                 <div id="N7">
                     <p>各种未定义类型的文献：</p>
-                    <p>主要责任者：<input type="text" name="" /></p>
-                    <p>文献题名：<input type="text" name="" /></p>
-                    <p>出版地：<input type="text" name="" /></p>
-                    <p>出版者：<input type="text" name="" /></p>
-                    <p>出版年：<input type="text" name="" /></p>
+                    <p>主要责任者：<input type="text" name="Author7" id="Author7" /></p>
+                    <p>文献题名：<input type="text" name="Title7" id="Title7" /></p>
+                    <input type="hidden" id="type7" />
+                    <p>出版地：<input type="text" name="Country7" id="Country7" /></p>
+                    <p>出版者：<input type="text" name="Publisher7" id="Publisher7" /></p>
+                    <p>出版年：<input type="text" name="PublishYear7" id="PublishYear7" /></p>
                 </div>
-                <input type="submit" value="添加文献" />
+                <input type="submit" value="添加文献" onclick="generateS()"/>
             </form>
         </div>
+
+        <div id="result">
+            <p>已生成的文献列表：</p>
+            <p id="r">目前没有生成的文献！</p>
+            <iframe name="btz" style="display:none;"></iframe>  
+        </div>
+
     </div>
 
     <div id="footer">
